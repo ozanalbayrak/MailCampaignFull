@@ -1,0 +1,17 @@
+<div mat-dialog-content>
+  <input type="hidden" [(ngModel)]="contact.pk">
+  <mat-form-field>
+    <input matInput [(ngModel)]="contact.fullName" placeholder="Full Name">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="contact.email" type="email" placeholder="Email">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button *ngIf="actionAdd"  mat-button (click)="onAddClick()">Add</button>
+  <button *ngIf="!actionAdd" mat-button (click)="onUpdateClick()">Update</button>
+</div>
+
+<div *ngIf="message" class="alert alert-secondary" role="alert">{{ message }}</div>
+
