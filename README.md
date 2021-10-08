@@ -1,8 +1,10 @@
 # MailCampaignFull
 
 Prerequisites: 
-* Maven
-* Angular Client
+* JDK 16 
+* Maven 3.6.3
+* npm 7.18.1
+* Angular Client 12.2.8
 
 * git clone https://github.com/ozanalbayrak/MailCampaignFull.git
 
